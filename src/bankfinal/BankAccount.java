@@ -28,12 +28,12 @@ package bankfinal;
          {
          return this.accountBalance;
                  }
-         public synchronized void withdraw(double value, String name)
+         public void withdraw(double value, String name)
          {
            System.out.println("Amount: " + value*-1 + ", was withdrawn by user: " + name);
            accountBalance -= value;
          }
-         public synchronized void deposit(double value, String name)
+         public void deposit(double value, String name)
          {
            System.out.println("Amount: " + value + ", was deposited by user: " + name);
            accountBalance +=value;
